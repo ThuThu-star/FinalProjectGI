@@ -6,24 +6,24 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprite>sprites\spr_button_replay</sprite>
+    <sprite>sprites\spr_button_menu</sprite>
+    <sprite>sprites\spr_button_exit</sprite>
+    <sprite>sprites\spr_play_button</sprite>
+    <sprite>sprites\spr_button_help</sprite>
+    <sprite>sprites\spr_game_name</sprite>
     <sprites name="player">
-      <sprite>sprites\spr_player_left</sprite>
-      <sprite>sprites\spr_player_right</sprite>
-      <sprite>sprites\spr_player_run_right</sprite>
-      <sprite>sprites\spr_player_run_left</sprite>
-      <sprite>sprites\spr_player_jump_right</sprite>
-      <sprite>sprites\spr_player_jump_left</sprite>
-      <sprite>sprites\spr_jack_hurt_right</sprite>
-      <sprite>sprites\spr_jack_hurt_left</sprite>
-      <sprite>sprites\spr_player_die_right</sprite>
-      <sprite>sprites\spr_player_die_left</sprite>
-      <sprite>sprites\spr_player_throw_right</sprite>
-      <sprite>sprites\spr_player_throw_left</sprite>
+      <sprite>sprites\spr_player_idle</sprite>
+      <sprite>sprites\spr_player_run</sprite>
+      <sprite>sprites\spr_player_jump</sprite>
+      <sprite>sprites\spr_jack_hurt</sprite>
+      <sprite>sprites\spr_player_die</sprite>
+      <sprite>sprites\spr_player_throw</sprite>
       <sprite>sprites\spr_rock</sprite>
     </sprites>
     <sprites name="lv1">
       <sprite>sprites\spr_key_lv1</sprite>
-      <sprite>sprites\spr_golden_chest</sprite>
+      <sprite>sprites\spr_golden_chest_open</sprite>
     </sprites>
     <sprites name="lv2">
       <sprite>sprites\spr_key_lv2</sprite>
@@ -43,6 +43,7 @@
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts"/>
   <objects name="objects">
     <objects name="lv1">
       <object>objects\obj_golden_key</object>
@@ -57,6 +58,14 @@
     <object>objects\obj_enemy_1</object>
     <object>objects\obj_enemy_2</object>
   </objects>
+  <rooms name="rooms">
+    <room>rooms\r_menu</room>
+    <room>rooms\r_lv1</room>
+    <room>rooms\r_lv2</room>
+    <room>rooms\r_lv3</room>
+    <room>rooms\r_win</room>
+    <room>rooms\r_lost</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
