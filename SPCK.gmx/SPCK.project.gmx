@@ -35,6 +35,9 @@
       <background>background\bg_lv3</background>
       <background>background\bg_lv2</background>
       <background>background\bg_lv1</background>
+      <background>background\bg_win</background>
+      <background>background\bg_lost</background>
+      <background>background\bg_help</background>
     </backgrounds>
     <backgrounds name="tileset">
       <background>background\bg_lv3_tileset</background>
@@ -43,7 +46,6 @@
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
-  <scripts name="scripts"/>
   <objects name="objects">
     <objects name="lv1">
       <object>objects\obj_golden_key</object>
@@ -57,6 +59,17 @@
     <object>objects\obj_rock</object>
     <object>objects\obj_enemy_1</object>
     <object>objects\obj_enemy_2</object>
+    <object>objects\obj_replay</object>
+    <object>objects\obj_play</object>
+    <object>objects\obj_menu</object>
+    <object>objects\obj_exit</object>
+    <object>objects\obj_back1</object>
+    <object>objects\obj_back2</object>
+    <object>objects\obj_back3</object>
+    <object>objects\obj_help</object>
+    <object>objects\obj_gamename</object>
+    <object>objects\obj_grass</object>
+    <object>objects\obj_block</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_menu</room>
@@ -65,6 +78,7 @@
     <room>rooms\r_lv3</room>
     <room>rooms\r_win</room>
     <room>rooms\r_lost</room>
+    <room>rooms\r_help</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

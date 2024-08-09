@@ -13,7 +13,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>576</width>
-  <height>324</height>
+  <width>825</width>
+  <height>464</height>
   <data>images\bg_lv2.png</data>
 </background>
