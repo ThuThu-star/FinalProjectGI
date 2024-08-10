@@ -6,12 +6,6 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_button_replay</sprite>
-    <sprite>sprites\spr_button_menu</sprite>
-    <sprite>sprites\spr_button_exit</sprite>
-    <sprite>sprites\spr_play_button</sprite>
-    <sprite>sprites\spr_button_help</sprite>
-    <sprite>sprites\spr_game_name</sprite>
     <sprites name="player">
       <sprite>sprites\spr_player_idle</sprite>
       <sprite>sprites\spr_player_run</sprite>
@@ -21,13 +15,29 @@
       <sprite>sprites\spr_player_throw</sprite>
       <sprite>sprites\spr_rock</sprite>
     </sprites>
-    <sprites name="lv1">
+    <sprites name="lv2">
       <sprite>sprites\spr_key_lv1</sprite>
       <sprite>sprites\spr_golden_chest_open</sprite>
+      <sprite>sprites\spr_golden_chest</sprite>
+      <sprite>sprites\spr_star</sprite>
     </sprites>
-    <sprites name="lv2">
+    <sprites name="lv3">
       <sprite>sprites\spr_key_lv2</sprite>
+      <sprite>sprites\spr_silver_chest_open</sprite>
       <sprite>sprites\spr_silver_chest</sprite>
+    </sprites>
+    <sprites name="others">
+      <sprite>sprites\spr_block</sprite>
+      <sprite>sprites\spr_game_name</sprite>
+      <sprite>sprites\spr_button_menu</sprite>
+      <sprite>sprites\spr_button_help</sprite>
+      <sprite>sprites\spr_button_exit</sprite>
+      <sprite>sprites\spr_play_button</sprite>
+      <sprite>sprites\spr_button_replay</sprite>
+    </sprites>
+    <sprites name="enemy">
+      <sprite>sprites\spr_spike</sprite>
+      <sprite>sprites\spr_spider</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -47,29 +57,34 @@
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <objects name="lv1">
+    <objects name="lv2">
       <object>objects\obj_golden_key</object>
       <object>objects\obj_golden_chest</object>
     </objects>
-    <objects name="lv2">
+    <objects name="lv3">
       <object>objects\obj_silver_key</object>
-      <object>objects\obj_</object>
+      <object>objects\obj_silver_chest</object>
     </objects>
-    <object>objects\obj_player</object>
-    <object>objects\obj_rock</object>
-    <object>objects\obj_enemy_1</object>
-    <object>objects\obj_enemy_2</object>
-    <object>objects\obj_replay</object>
-    <object>objects\obj_play</object>
-    <object>objects\obj_menu</object>
-    <object>objects\obj_exit</object>
-    <object>objects\obj_back1</object>
-    <object>objects\obj_back2</object>
-    <object>objects\obj_back3</object>
-    <object>objects\obj_help</object>
-    <object>objects\obj_gamename</object>
-    <object>objects\obj_grass</object>
-    <object>objects\obj_block</object>
+    <objects name="others">
+      <object>objects\obj_replay</object>
+      <object>objects\obj_exit</object>
+      <object>objects\obj_help</object>
+      <object>objects\obj_block</object>
+      <object>objects\obj_gamename</object>
+      <object>objects\obj_play</object>
+      <object>objects\obj_menu</object>
+    </objects>
+    <objects name="main">
+      <object>objects\obj_rock</object>
+      <object>objects\obj_player</object>
+      <object>objects\obj_enemy_1</object>
+      <object>objects\obj_enemy_2</object>
+      <object>objects\obj_star</object>
+    </objects>
+    <objects name="enemy">
+      <object>objects\obj_spike</object>
+      <object>objects\obj_spider</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_menu</room>
