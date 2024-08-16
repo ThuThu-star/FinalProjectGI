@@ -17,13 +17,11 @@
     </sprites>
     <sprites name="lv2">
       <sprite>sprites\spr_key_lv1</sprite>
-      <sprite>sprites\spr_golden_chest_open</sprite>
       <sprite>sprites\spr_golden_chest</sprite>
       <sprite>sprites\spr_star</sprite>
     </sprites>
     <sprites name="lv3">
       <sprite>sprites\spr_key_lv2</sprite>
-      <sprite>sprites\spr_silver_chest_open</sprite>
       <sprite>sprites\spr_silver_chest</sprite>
     </sprites>
     <sprites name="others">
@@ -38,6 +36,9 @@
     <sprites name="enemy">
       <sprite>sprites\spr_spike</sprite>
       <sprite>sprites\spr_spider</sprite>
+      <sprite>sprites\spr_enemy</sprite>
+      <sprite>sprites\spr_enemy_walk</sprite>
+      <sprite>sprites\spr_enemy_attack</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -77,8 +78,7 @@
     <objects name="main">
       <object>objects\obj_rock</object>
       <object>objects\obj_player</object>
-      <object>objects\obj_enemy_1</object>
-      <object>objects\obj_enemy_2</object>
+      <object>objects\obj_enemy</object>
       <object>objects\obj_star</object>
     </objects>
     <objects name="enemy">
