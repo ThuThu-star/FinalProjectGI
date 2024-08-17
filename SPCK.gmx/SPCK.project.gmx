@@ -13,6 +13,7 @@
       <sprite>sprites\spr_jack_hurt</sprite>
       <sprite>sprites\spr_player_die</sprite>
       <sprite>sprites\spr_player_throw</sprite>
+      <sprite>sprites\spr_player_attack</sprite>
       <sprite>sprites\spr_rock</sprite>
     </sprites>
     <sprites name="lv2">
@@ -32,13 +33,21 @@
       <sprite>sprites\spr_button_exit</sprite>
       <sprite>sprites\spr_play_button</sprite>
       <sprite>sprites\spr_button_replay</sprite>
+      <sprite>sprites\spr_enemy_bullet_left</sprite>
+      <sprite>sprites\spr_enemy_bullet_right</sprite>
+      <sprite>sprites\spr_web_bullet</sprite>
+      <sprite>sprites\spr_slope_1</sprite>
     </sprites>
     <sprites name="enemy">
       <sprite>sprites\spr_spike</sprite>
       <sprite>sprites\spr_spider</sprite>
-      <sprite>sprites\spr_enemy</sprite>
-      <sprite>sprites\spr_enemy_walk</sprite>
-      <sprite>sprites\spr_enemy_attack</sprite>
+      <sprite>sprites\spr_spider_right</sprite>
+      <sprite>sprites\spr_enemy_right</sprite>
+      <sprite>sprites\spr_enemy_left</sprite>
+      <sprite>sprites\spr_enemy_walk_right</sprite>
+      <sprite>sprites\spr_enemy_walk_left</sprite>
+      <sprite>sprites\spr_enemy_attack_right</sprite>
+      <sprite>sprites\spr_enemy_attack_left</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -57,6 +66,16 @@
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_input.gml</script>
+    <script>scripts\scr_player_idle.gml</script>
+    <script>scripts\scr_player_jump.gml</script>
+    <script>scripts\scr_player_move.gml</script>
+    <script>scripts\scr_hit.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\font</font>
+  </fonts>
   <objects name="objects">
     <objects name="lv2">
       <object>objects\obj_golden_key</object>
@@ -74,6 +93,13 @@
       <object>objects\obj_gamename</object>
       <object>objects\obj_play</object>
       <object>objects\obj_menu</object>
+      <object>objects\obj_ene_bullet</object>
+      <object>objects\obj_ene_bullet_right</object>
+      <object>objects\obj_draw_score</object>
+      <object>objects\obj_score</object>
+      <object>objects\obj_web_bullet</object>
+      <object>objects\obj_slope_1</object>
+      <object>objects\obj_slope</object>
     </objects>
     <objects name="main">
       <object>objects\obj_rock</object>

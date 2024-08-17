@@ -7,7 +7,133 @@
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
-  <events/>
+  <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// INIT
+// Step
+enum player_states{
+     idle,
+     move,
+     jump,
+     attack,
+}
+
+// Movement
+grav = 0.6
+moveX = 0
+moveY = 0
+nor_spd = 3
+run_spd = 5
+count = 0
+
+// Init state
+state = player_states.idle
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Controller
+// State Controller
+switch (state) {
+    case (player_states.idle) :
+    scr_player_idle();
+        break;
+    case (player_states.move):
+    scr_player_move();
+        break; 
+    case (player_states.jump) :
+        scr_player_jump();
+        break;
+}
+
+// Physics
+if (moveY &lt; 10) {
+    moveY = min(moveY + grav, 9)
+}
+
+// Collision Check
+if (place_meeting(x, y + moveY, obj_block)) {
+    while (not place_meeting(x, y + sign(moveY), obj_block)) {
+           y += sign(moveY)
+    }
+    moveY = 0
+}
+
+if (place_meeting(x + moveX, y - 2, obj_block)) {
+    while (not place_meeting(x + sign(moveX), y - 2, obj_block)) {
+           x += sign(moveX)
+    }
+    moveX = 0
+}
+
+// Slope collision
+var on_slope = false;
+if (place_meeting(x + moveX, y, obj_slope)) {
+    on_slope = true;
+    moveY = -moveX; // Move up the slope
+}
+
+// Apply horizontal movement
+x += moveX;
+
+// Apply vertical movement and correct for slope collision
+if (!on_slope || (on_slope &amp;&amp; !place_meeting(x, y + moveY, obj_slope))) {
+    y += moveY;
+} else if (on_slope) {
+    // Correct the vertical position if the player is embedded in the slope
+    while (place_meeting(x, y, obj_slope)) {
+        y -= 1; // Move the player up until they are no longer colliding with the slope
+    }
+}
+
+// Sprite Check
+if (input_left + input_right != 0 and input_left + input_right != 2) {
+    image_xscale = sign(input_right - input_left)
+} 
+   
+// Apply Movement
+x += moveX
+y += moveY
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>

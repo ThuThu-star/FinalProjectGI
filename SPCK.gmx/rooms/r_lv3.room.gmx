@@ -134,6 +134,9 @@
     <instance objName="obj_spider" x="3168" y="320" name="inst_A6BAF91A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_silver_key" x="1696" y="128" name="inst_0CC511C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_silver_chest" x="3424" y="288" name="inst_E020FA25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy" x="288" y="288" name="inst_11AAF9B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy" x="2016" y="128" name="inst_D91D95A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy" x="2112" y="128" name="inst_05516C97" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_lv3_tileset" x="0" y="352" w="32" h="32" xo="128" yo="416" id="10000528" name="inst_EF530EAF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
