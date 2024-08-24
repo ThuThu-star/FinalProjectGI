@@ -4,7 +4,15 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sou_main</sound>
+    <sound>sound\sou_win</sound>
+    <sound>sound\sou_lost</sound>
+    <sound>sound\sou_attack</sound>
+    <sound>sound\sou_collect</sound>
+    <sound>sound\sou_click</sound>
+    <sound>sound\sou_jump</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="player">
       <sprite>sprites\spr_player_idle</sprite>
