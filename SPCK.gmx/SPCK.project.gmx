@@ -18,7 +18,7 @@
       <sprite>sprites\spr_player_idle</sprite>
       <sprite>sprites\spr_player_run</sprite>
       <sprite>sprites\spr_player_jump</sprite>
-      <sprite>sprites\spr_jack_hurt</sprite>
+      <sprite>sprites\spr_player_hurt</sprite>
       <sprite>sprites\spr_player_die</sprite>
       <sprite>sprites\spr_player_throw</sprite>
       <sprite>sprites\spr_player_attack</sprite>
@@ -45,6 +45,12 @@
       <sprite>sprites\spr_enemy_bullet_right</sprite>
       <sprite>sprites\spr_web_bullet</sprite>
       <sprite>sprites\spr_slope_1</sprite>
+      <sprite>sprites\spr_slope_2</sprite>
+      <sprite>sprites\spr_flower_1</sprite>
+      <sprite>sprites\spr_flower_2</sprite>
+      <sprite>sprites\spr_flower_3</sprite>
+      <sprite>sprites\spr_grass</sprite>
+      <sprite>sprites\spr_grass_2</sprite>
     </sprites>
     <sprites name="enemy">
       <sprite>sprites\spr_spike</sprite>
@@ -98,6 +104,7 @@
       <object>objects\obj_exit</object>
       <object>objects\obj_help</object>
       <object>objects\obj_block</object>
+      <object>objects\obj_fallen</object>
       <object>objects\obj_gamename</object>
       <object>objects\obj_play</object>
       <object>objects\obj_menu</object>
@@ -107,7 +114,13 @@
       <object>objects\obj_score</object>
       <object>objects\obj_web_bullet</object>
       <object>objects\obj_slope_1</object>
+      <object>objects\obj_slope_2</object>
       <object>objects\obj_slope</object>
+      <object>objects\obj_grass_1</object>
+      <object>objects\obj_grass_2</object>
+      <object>objects\obj_flower_1</object>
+      <object>objects\obj_flower_2</object>
+      <object>objects\obj_flower_3</object>
     </objects>
     <objects name="main">
       <object>objects\obj_rock</object>
@@ -125,9 +138,9 @@
     <room>rooms\r_lv1</room>
     <room>rooms\r_lv2</room>
     <room>rooms\r_lv3</room>
+    <room>rooms\r_help</room>
     <room>rooms\r_win</room>
     <room>rooms\r_lost</room>
-    <room>rooms\r_help</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
