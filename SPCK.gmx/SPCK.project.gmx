@@ -51,6 +51,7 @@
       <sprite>sprites\spr_flower_3</sprite>
       <sprite>sprites\spr_grass</sprite>
       <sprite>sprites\spr_grass_2</sprite>
+      <sprite>sprites\spr_enemy2_dmg</sprite>
     </sprites>
     <sprites name="enemy">
       <sprite>sprites\spr_spike</sprite>
@@ -62,6 +63,10 @@
       <sprite>sprites\spr_enemy_walk_left</sprite>
       <sprite>sprites\spr_enemy_attack_right</sprite>
       <sprite>sprites\spr_enemy_attack_left</sprite>
+      <sprite>sprites\spr_crow</sprite>
+      <sprite>sprites\spr_enemy2_idle</sprite>
+      <sprite>sprites\spr_enemy2_walking</sprite>
+      <sprite>sprites\spr_enemy2_attack</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -86,6 +91,11 @@
     <script>scripts\scr_player_jump.gml</script>
     <script>scripts\scr_player_move.gml</script>
     <script>scripts\scr_hit.gml</script>
+    <scripts name="enemy2">
+      <script>scripts\scr_enemy2_attack.gml</script>
+      <script>scripts\scr_enemy2_run.gml</script>
+      <script>scripts\scr_enemy2_idle.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font</font>
@@ -121,16 +131,20 @@
       <object>objects\obj_flower_1</object>
       <object>objects\obj_flower_2</object>
       <object>objects\obj_flower_3</object>
+      <object>objects\obj_spawner</object>
+      <object>objects\obj_enemy2_dmg</object>
     </objects>
     <objects name="main">
       <object>objects\obj_rock</object>
       <object>objects\obj_player</object>
-      <object>objects\obj_enemy</object>
       <object>objects\obj_star</object>
     </objects>
     <objects name="enemy">
       <object>objects\obj_spike</object>
       <object>objects\obj_spider</object>
+      <object>objects\obj_enemy</object>
+      <object>objects\obj_crow</object>
+      <object>objects\obj_enemy2</object>
     </objects>
   </objects>
   <rooms name="rooms">
