@@ -7,7 +7,7 @@ if (input_left + input_right == 0) {
 }
 
 if (input_jump) {
-    moveY = -10
+    moveY = -7
     state = player_states.jump
 }
 

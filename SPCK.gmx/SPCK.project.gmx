@@ -91,6 +91,7 @@
     <script>scripts\scr_player_jump.gml</script>
     <script>scripts\scr_player_move.gml</script>
     <script>scripts\scr_hit.gml</script>
+    <script>scripts\scr_player_attack.gml</script>
     <scripts name="enemy2">
       <script>scripts\scr_enemy2_attack.gml</script>
       <script>scripts\scr_enemy2_run.gml</script>
@@ -131,8 +132,11 @@
       <object>objects\obj_flower_1</object>
       <object>objects\obj_flower_2</object>
       <object>objects\obj_flower_3</object>
-      <object>objects\obj_spawner</object>
+      <object>objects\obj_crow_spawner</object>
       <object>objects\obj_enemy2_dmg</object>
+      <object>objects\obj_enemy_block</object>
+      <object>objects\obj_time_controller</object>
+      <object>objects\obj_time_count_up</object>
     </objects>
     <objects name="main">
       <object>objects\obj_rock</object>

@@ -75,13 +75,16 @@ state = player_states.idle
 // State Controller
 switch (state) {
     case (player_states.idle) :
-    scr_player_idle();
+        scr_player_idle();
         break;
     case (player_states.move):
-    scr_player_move();
+        scr_player_move();
         break; 
     case (player_states.jump) :
         scr_player_jump();
+        break;
+    case (player_states.attack) : 
+        scr_player_attack();
         break;
 }
 
@@ -129,7 +132,7 @@ if (!on_slope || (on_slope &amp;&amp; !place_meeting(x, y + moveY, obj_slope))) 
 if (input_left + input_right != 0 and input_left + input_right != 2) {
     image_xscale = sign(input_right - input_left)
 } 
-   
+
 // Apply Movement
 x += moveX
 y += moveY
@@ -212,29 +215,6 @@ y += moveY
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_enemy2_dmg">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>player_hp = player_hp - 10
-</string>
-          </argument>
-        </arguments>
       </action>
     </event>
     <event eventtype="4" ename="obj_spike">
@@ -345,6 +325,43 @@ is_damage = true
         <isnot>0</isnot>
       </action>
     </event>
+    <event eventtype="4" ename="obj_enemy2_dmg">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>player_hp = player_hp - 10
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>other</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_fallen">
       <action>
         <libid>1</libid>
@@ -387,7 +404,7 @@ is_damage = true
             <kind>1</kind>
             <string>/// DRAW HP BAR
 draw_self();
-draw_healthbar(x-30, y-60, x+30, y-80, player_hp/player_hp_max*100, c_black, c_red, c_lime, 0, true, true);
+draw_healthbar(x-12, y-40, x+12, y-50, player_hp/player_hp_max*100, c_black, c_red, c_lime, 0, true, true);
 </string>
           </argument>
         </arguments>
