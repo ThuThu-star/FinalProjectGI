@@ -41,6 +41,8 @@
       <sprite>sprites\spr_button_exit</sprite>
       <sprite>sprites\spr_play_button</sprite>
       <sprite>sprites\spr_button_replay</sprite>
+      <sprite>sprites\spr_unmute_button</sprite>
+      <sprite>sprites\spr_mute_button</sprite>
       <sprite>sprites\spr_enemy_bullet_left</sprite>
       <sprite>sprites\spr_enemy_bullet_right</sprite>
       <sprite>sprites\spr_web_bullet</sprite>
@@ -119,6 +121,7 @@
       <object>objects\obj_gamename</object>
       <object>objects\obj_play</object>
       <object>objects\obj_menu</object>
+      <object>objects\obj_un_mute_button</object>
       <object>objects\obj_ene_bullet</object>
       <object>objects\obj_ene_bullet_right</object>
       <object>objects\obj_draw_score</object>
